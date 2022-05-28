@@ -53,10 +53,11 @@ select {
 /*theme*/
 
 :root {
-    --clr-dark: #222;
-    --clr-white: #f9f9f9;
-    --clr-primary: #EF6155;
-    --clr-primary-strong: #f13422;
+    --clr-dark: hsl(218, 22%, 67%);
+    --clr-white: hsl(204, 43%, 93%);
+    --clr-primary: hsl(179, 62%, 43%);
+    --clr-primary-strong: hsl(179, 82%, 43%);
+    --clr-secondary: hsl(71, 73%, 54%);
     --fs-h1: 4.2rem;
     --fs-h2: 3.15rem;
     --fs-h3: 2rem;
@@ -70,7 +71,7 @@ select {
     --spacing-xl: 10rem;
     --transition: ease background-color .2s;
     --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.28);
-    --min-col-width: 15rem;
+    --min-col-width: 20rem;
 }
 
 /*layout*/
@@ -79,12 +80,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 100%;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     background-color: var(--clr-white);
     color: var(--clr-dark);
+
 }
 
 header {
@@ -98,10 +100,12 @@ header {
 main {
     width: min(100%, 90ch);
     margin: 0 auto;
-    padding: 5vh clamp(1rem, 5vw, 3rem) 1rem;
+    flex-grow: 1;
+    display:grid;
+    place-items: center;
 }
 
-main > * {
+main>* {
     margin-top: 1em;
 }
 
@@ -131,8 +135,13 @@ footer {
 .container--grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-col-width)), 1fr));
-    padding: 1em;
-    gap: 1em;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 40rem) {
+    .container--grid > div:nth-child(1) {
+        grid-column: span 2;
+    }
 }
 
 .container--flex {
@@ -142,7 +151,7 @@ footer {
     gap: 1em;
 }
 
-.container--flex > * {
+.container--flex>* {
     flex: 1 1 var(--min-col-width);
 }
 
