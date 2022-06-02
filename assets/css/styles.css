@@ -9,11 +9,11 @@
 * {
     margin: 0;
     padding: 0;
-    outline: 1px solid salmon;
+    /* outline: 1px solid salmon; */
 }
 
 :focus {
-    outline: 2px solid var(--clr-primary-strong);
+    outline: 2px solid var(--clr-secondary);
     outline-offset: 2px;
     transition: var(--transition);
 }
@@ -48,7 +48,7 @@ html {
     --clr-secondary: hsl(71, 73%, 54%);
     --fs-h2: 1.15rem;
     --fs-text: 0.9rem;
-    --fs-lead: 1.15rem;
+    --fs-lead: 1.1rem;
     --border-radius: 8px;
     --transition: ease background-color .2s;
     /* --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.28); */
@@ -66,16 +66,15 @@ body {
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     background-color: var(--clr-light);
-    color: var(--clr-dark); 
-
+    color: var(--clr-dark);
 }
 
 main {
-    width: min(100%, 60rem);
+    width: min(100%, 45rem);
     margin: 0 auto;
     padding: 1.5rem;
     flex-grow: 1;
-    display:grid;
+    display: grid;
     place-items: center;
 }
 
@@ -110,24 +109,31 @@ footer {
 }
 
 .container--grid>* {
-    padding: 1.5rem;
+    padding: 2.5rem;
 }
 
-.container--grid > div:nth-child(2) {
+.container--grid>div:nth-child(2) {
     background-color: var(--clr-primary);
     color: var(--clr-light);
 }
 
-.container--grid > div:nth-child(3) {
+.container--grid>div:nth-child(3) {
     background-color: hsl(179, 47%, 52%);
     color: var(--clr-light);
 }
 
-@media screen and (min-width: 40rem) {
-    .container--grid > div:nth-child(1) {
+@media screen and (min-width: 43rem) {
+    .container--grid>div:nth-child(1) {
         grid-column: span 2;
     }
 }
+
+.container--flex-center {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
 
 
 
@@ -148,7 +154,6 @@ li {
 
 main p {
     margin: 0 0 1rem;
-    max-width: 60ch;
 }
 
 .lead {
@@ -157,7 +162,7 @@ main p {
 }
 
 .large {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
@@ -201,18 +206,10 @@ a:hover {
     cursor: pointer;
 }
 
-.btn--alt {
+.btn:hover {
     background-color: var(--clr-light);
     color: var(--clr-primary);
-}
-
-.btn:hover {
-    background-color: var(--clr-primary-strong)
-}
-
-.btn--alt:hover {
-    background-color: var(--clr-primary);
-    color: var(--clr-light);
+    border-color: var(--clr-secondary);
 }
 
 /*card*/
@@ -227,6 +224,8 @@ a:hover {
     background-color: #fff;
     box-shadow: var(--box-shadow);
 }
+
+/* list */
 
 ul {
     list-style: none;
