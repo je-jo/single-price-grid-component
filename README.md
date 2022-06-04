@@ -1,6 +1,6 @@
-# README - Basic Template
+# Frontend Mentor - Single price grid component solution
 
-A basic folder structure for simple front-end projects, with minimal styling provided.
+This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -18,7 +18,7 @@ A basic folder structure for simple front-end projects, with minimal styling pro
 
 ### Description
 
-This is a a basic folder structure for simple front-end projects. Includes minimal styling for most used elements. Custom properties and general idea mostly taken from [Stephanie Eckless](https://moderncss.dev/).
+This is a simple css challenge I used to test my [basic template](https://github.com/je-jo/basic-template).
 
 ### Screenshot
 
@@ -26,8 +26,8 @@ This is a a basic folder structure for simple front-end projects. Includes minim
 
 ### Links
 
-- [Repo](https://github.com/je-jo/basic-template)
-- [Live Site](https://je-jo.github.io/basic-template/)
+- [Repo](https://github.com/je-jo/single-price-grid-component)
+- [Live Site](https://je-jo.github.io/single-price-grid-component/)
 
 ## My process
 
@@ -41,14 +41,12 @@ This is a a basic folder structure for simple front-end projects. Includes minim
 
 ### Observations
 
-This template should make building simple responsive pages quicker.
+Learned that paragraph's max-width can mess with grid items' equal width.
 
 
 ### Useful resources
 
-- [HTML / Sass Jumpstart](https://github.com/5t3ph/html-sass-jumpstart) - Inspired by Stephanie Eckless' HTML / Sass Jumpstart, but much simpler;
-- [Solutions to Replace the 12-Column Grid](https://moderncss.dev/solutions-to-replace-the-12-column-grid/);
-- [Colors from Paraiso theme](https://github.com/idleberg/Paraiso-Color-Palettes);
+- [My Basic Template](https://github.com/je-jo/basic-template) pretty much based on Stephanie Eckless' [HTML / Sass Jumpstart](https://github.com/5t3ph/html-sass-jumpstart) but much simpler;
 
 ## Author
 

@@ -9,7 +9,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* outline: 1px solid salmon; */
 }
 
 :focus {
@@ -52,7 +51,7 @@ html {
     --fs-lead: 1.1rem;
     --border-radius: 0.5rem;
     --transition: ease background-color .2s;
-    --box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    --box-shadow: 0 0 2rem hsla(217, 22%, 67%, 0.5);
     --min-col-width: 20rem;
 }
 
@@ -104,15 +103,16 @@ footer {
 .container--grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-col-width)), 1fr));
-    outline: 0.5rem solid var(--clr-light);
     border-radius: var(--border-radius);
-    /* box-shadow: var(--box-shadow); */
+    box-shadow: 0 0 0 5px transparent,
+        var(--box-shadow);
+    overflow: hidden; /*for the border-radius to show*/
 }
 
 .container--grid>* {
-    padding: 2.5rem;
+    padding: 2rem;
     background-color: #fff;
-  
+
 }
 
 .container--grid>div:nth-child(2) {
@@ -124,7 +124,6 @@ footer {
 .container--grid>div:nth-child(3) {
     background-color: var(--clr-primary-light);
     color: var(--clr-light);
-    border-color: var(--clr-primary-light);
 }
 
 @media screen and (min-width: 43rem) {
@@ -138,9 +137,6 @@ footer {
     align-items: center;
     gap: 1em;
 }
-
-
-
 
 /*typography */
 
