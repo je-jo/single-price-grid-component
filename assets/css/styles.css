@@ -51,7 +51,7 @@ html {
     --fs-lead: 1.1rem;
     --border-radius: 0.5rem;
     --transition: ease background-color .2s;
-    --box-shadow: 0 0 2rem hsla(217, 22%, 67%, 0.5);
+    --box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
     --min-col-width: 20rem;
 }
 
@@ -64,7 +64,6 @@ body {
     font-family: 'Karla', sans-serif;
     font-size: 100%;
     line-height: 1.7;
-    text-rendering: optimizeSpeed;
     background-color: var(--clr-light);
     color: var(--clr-dark);
 }
@@ -164,10 +163,12 @@ li {
 
 main p {
     margin: 0 0 1rem;
+    width: min(100%, 60ch);
 }
 
 .lead {
     font-size: var(--fs-lead);
+    font-weight: 700;
     color: var(--clr-secondary);
 }
 
@@ -214,6 +215,7 @@ a:hover {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    box-shadow: var(--box-shadow);
 }
 
 .btn:hover {
